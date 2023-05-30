@@ -1,0 +1,248 @@
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git add Chapter1.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Chapter1.txt
+
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git commit -m "Complete Chapter 1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Rudresh@DESKTOP-HVCSMOH.(none)')
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ touch chapter2.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ touch chapter3.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ code Chapter1.txt
+
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Chapter.txt
+        chapter2.txt
+        chapter3.txt
+
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git add Chapter.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git add Chapter1.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Chapter.txt
+        new file:   Chapter1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter2.txt
+        chapter3.txt
+
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git commit -m "complete chapter 1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Rudresh@DESKTOP-HVCSMOH.(none)')
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git config --global user.email "pandeyrudresh203@gmail.com"
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git config --global user.name "Rudresh Pandey"
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git commit -m "complete chapter 1"
+[master (root-commit) af72595] complete chapter 1
+ 2 files changed, 1 insertion(+)
+ create mode 100644 Chapter.txt
+ create mode 100644 Chapter1.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git log
+commit af7259529131dd3246dcd15cd5837aae49542755 (HEAD -> master)
+Author: Rudresh Pandey <pandeyrudresh203@gmail.com>
+Date:   Mon May 29 23:35:16 2023 +0530
+
+    complete chapter 1
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ ls
+Chapter1.txt  chapter2.txt  chapter3.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Chapter.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter2.txt
+        chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git log
+commit af7259529131dd3246dcd15cd5837aae49542755 (HEAD -> master)
+Author: Rudresh Pandey <pandeyrudresh203@gmail.com>
+Date:   Mon May 29 23:35:16 2023 +0530
+
+    complete chapter 1
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git add .
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    Chapter.txt -> chapter2.txt
+        new file:   chapter3.txt
+
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ touch chapter2.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ code chapter2.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ code chapter3.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git add .
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ ls
+Chapter1.txt  chapter2.txt  chapter3.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Chapter.txt
+        new file:   chapter2.txt
+        new file:   chapter3.txt
+
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git commit -m "Chapter 2 and chapter 3 completed
+> git commit -m "Chapter 2 and chapter 3 completed"
+> ^C
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git commit -m "Chapter 2 and chapter 3 completed
+git commit -m "Chapter 2 and chapter 3 completed"
+> ^C
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git commit -m "Chapter 2 and chapter 3 completed"
+[master 0e69b24] Chapter 2 and chapter 3 completed
+ 3 files changed, 2 insertions(+)
+ delete mode 100644 Chapter.txt
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git log
+commit 0e69b24bee9a60333950657ac4246f4e782206a0 (HEAD -> master)
+Author: Rudresh Pandey <pandeyrudresh203@gmail.com>
+Date:   Mon May 29 23:40:24 2023 +0530
+
+    Chapter 2 and chapter 3 completed
+
+commit af7259529131dd3246dcd15cd5837aae49542755
+Author: Rudresh Pandey <pandeyrudresh203@gmail.com>
+Date:   Mon May 29 23:35:16 2023 +0530
+
+    complete chapter 1
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$
+4e782206a0 (HEAD -> master)
+Author: Rudresh Pandey <pandeyrudresh203@gmail.com>
+Date:   Mon May 29 23:40:24 2023 +0530
+
+    Chapter 2 and chapter 3 completed
+
+commit af7259529131dd3246dcd15cd5837aae49542755
+Author: Rudresh Pandey <pandeyrudresh203@gmail.com>
+Date:   Mon May 29 23:35:16 2023 +0530
+
+    complete chapter 1
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git remote add origin https://github.com/RudreshPandey203/Story.git
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (8/8), 626 bytes | 313.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/RudreshPandey203/Story.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Rudresh@DESKTOP-HVCSMOH MINGW64 ~/OneDrive/Desktop/Story (master)
+$
+
+
+
